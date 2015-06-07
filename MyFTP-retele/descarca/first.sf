@@ -1,0 +1,12 @@
+project
+git init
+cream readme.txt
+git add readme
+git commit -m "mesaj"
+git reset readme
+brache o ramura a unui proiect
+repozitorul initial master
+git status
+git ign (ignore)
+comentariu /* fdsfs  */
+@ ignora comentariu

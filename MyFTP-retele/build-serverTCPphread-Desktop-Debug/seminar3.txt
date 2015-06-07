@@ -1,0 +1,29 @@
+anonime paip-uri comunicare intre procese inrudite datele se salveaza in memorie
+cu nume-fifo sunt stocate pe disk
+proces inrudit fiu-fiu, tata-fiu
+in fifo odata ce sunt citete datele din canal el sunt si extrase de acolo odata cu citirea
+read-ul este blocat by default cind canalul este gol
+write-ul se blocheaza cind este plin (fctnl) eliberam
+wordcound -  numara literele...
+wordcount -l numara nr de linii
+
+intrebari????
+in executie cind se executa ambii copii tatal sta si asteapta
+cite referinte exista in total la pipe-uri: raspunsul este cite 2 la fiecare proces plus inca cite unu la fiecare dup (dup egal cu o copie)
+
+oricite rulari ati da procesele ruleaza in pralel, nici odata nu va da eroare al 2 copil ca nu a primit date! RASPUNSUL: copilul 2 nu poate face nimic daca nu are imputul de la primul copil treaba asta blocheaza execl(wc......) deoarece asteapta citirea pina primul nu a scris in canal (pipe) asta blocheaza read 0 din execl...
+
+tema:
+tata citeste de la tastatura o comanda o transmite procesului fiu, fiul o executa, fiul nu afiseaza nimic pe ecran transmite la tata si tatal deja afiseaza. dami pagina facebook.com , fiul transmite tatalui si el deja afiseaza.
+comenzile sunt sirele de caractere delimitate de newLine 
+Outputul ca dimensiune in octeti variaza
+read de un nr mare e ok dar nu e fain
+fiul are 2 write si tatal are 2 read-uri
+fiul transimite dimensiunea si textul tatal citeste dimensiunea si aloca nr necesar de octeti pentru textul ca il va citi
+avem parte de logare. Daca nu s-a logat  nu permitem sa foloseasca sisteul
+MyFind se va face in contu nostru, nu intr-un singur director avem comanda exec(find)
+WC folosim prin exec(wc)
+quit nu inseamna citim si esim in data! el inseamna inchiderea frumoasa a intregului sistem tatal transmite tuturor fiilor ii inchide si apoi se inchide si el facem un shutDown frumos
+
+
+

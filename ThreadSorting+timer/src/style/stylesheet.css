@@ -1,0 +1,68 @@
+.root{
+    -fx-background-image: url("background.jpg");
+}
+.button{
+    -fx-box-shadow: 3px 4px 0px 0px #899599;
+    -fx-background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+    -fx-background-color:#ededed;
+    -fx-border-radius:15px;
+    -fx-border:1px solid #d6bcd6;
+    -fx-display: inline-block;
+    -fx-cursor: pointer;
+    -fx-padding:7px 25px;
+    -fx-text-shadow:0px 1px 0px #e1e2ed;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+.button:hover{
+    -fx-background:linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+    -fx-background-color:#bab1ba;
+    -fx-scale-x: 1.4px;
+    -fx-scale-y: 1.4px;
+}
+.button :active {
+    -fx-position:relative;
+    -fx-top:1px;
+}
+.firstAlgPane{
+    -fx-max-height: 600px;
+    -fx-max-width: 300px;
+    -fx-min-height: 520px;
+    -fx-min-width: 300px;
+    -fx-background-color: white;
+    -fx-background-radius: 30;
+    -fx-background-insets: 0;
+}
+
+.thirdAlgPane{
+
+    -fx-max-height: 500px;
+    -fx-max-width: 300px;
+    -fx-min-height: 520px;
+    -fx-min-width: 300px;
+    -fx-background-color: white;
+    -fx-background-radius: 30;
+    -fx-background-insets: 0;
+
+
+}
+.secondAlgPane{
+    -fx-max-height: 500px;
+    -fx-max-width: 300px;
+    -fx-min-height: 520px;
+    -fx-min-width: 300px;
+    -fx-background-color: white;
+    -fx-background-radius: 30;
+    -fx-background-insets: 0;
+}
+.thirdAlgPane{
+    -fx-hgap: 10;
+    -fx-vgap:10
+}
+.secondAlgPane{
+    -fx-hgap: 10;
+    -fx-vgap:10
+}
+.firstAlgPane{
+    -fx-hgap: 10;
+    -fx-vgap:10
+}
